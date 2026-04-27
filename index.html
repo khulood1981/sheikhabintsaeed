@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="ar" dir="rtl" class="h-full" id="htmlRoot">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">مدرسة شيخة بنت سعيد للتعليم الثانوي</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Noto Kufi Arabic', sans-serif; box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    .smooth { transition: all 0.3s ease; }
+    .fade-up { opacity: 0; transform: translateY(25px); animation: fadeUp 0.7s ease forwards; }
+    .fade-up-d1 { animation-delay: 0.1s; }
+    .fade-up-d2 { animation-delay: 0.2s; }
+    @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+    .header-nav { background-color: #ffffff; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .hero-section { background: linear-gradient(135deg, #0d6b7f 0%, #14889d 50%, #e8f4f8 100%); }
+    .card-elevated { box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 12px; }
+    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-6px); box-shadow: 0 12px 28px rgba(0,0,0,0.12); }
+    .icon-box { width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+    .section-title { position: relative; padding-bottom: 16px; }
+    .section-title::after { content: ''; position: absolute; bottom: 0; left: 0; width: 60px; height: 4px; background-color: #0d6b7f; border-radius: 2px; }
+    .page-view { display: none; }
+    .page-view.active { display: block; }
+    .back-btn { background-color: #f3f4f6; color: #0d6b7f; padding: 10px 16px; border-radius: 6px; font-size: 13px; font-weight: 600; border: none; cursor: pointer; margin-bottom: 20px; }
+    .back-btn:hover { background-color: #e5e7eb; }
+
+    .hero-image {
+      width: 100%;
+      max-width: 700px;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+      margin: 0 auto;
+      display: block;
+    }
+
+
+    /* ===== Professional Policies Accordion ===== */
+    .policies-accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 42px;
+    }
+    .policy-item {
+      background-color: #ffffff;
+      overflow: hidden;
+      border: 1px solid rgba(13, 107, 127, 0.10);
+    }
+    .policy-btn {
+      width: 100%;
+      background: #ffffff;
+      border: none;
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      cursor: pointer;
+      color: #1f2937;
+      font-size: 15px;
+      font-weight: 700;
+      text-align: inherit;
+    }
+    .policy-btn:hover { background-color: #f8fbfc; }
+    .policy-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .policy-mini-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background-color: #e8f4f8;
+      color: #0d6b7f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .policy-plus {
+      width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      background-color: #e8f4f8;
+      color: #0d6b7f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .policy-content {
+      display: none;
+      padding: 0 22px 20px 22px;
+      border-top: 1px solid #eef2f7;
+      background-color: #fbfdfe;
+    }
+    .policy-content.open { display: block; }
+    .policy-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      background-color: #0d6b7f;
+      color: #ffffff;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .policy-download:hover { background-color: #0a5563; }
+
+  </style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <style>body { box-sizing: border-box; }</style>
+ </head>
+ <body class="h-full overflow-auto" style="background-color: #f5f7fa;">
+  <div id="app" class="w-full h-full" style="min-height: 100%;">
+
+   <header class="header-nav sticky top-0 z-50">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 72px;">
+     <div class="flex items-center gap-3">
+      <div class="icon-box" style="background-color: #e8f4f8;">
+        <i data-lucide="book-open" style="width:28px;height:28px;color:#0d6b7f;"></i>
+      </div>
+      <div>
+       <h1 id="schoolName" style="color: #0d6b7f; font-size: 16px; font-weight: 800; margin: 0; letter-spacing: 0.5px;">مدرسة شيخة بنت سعيد</h1>
+       <p id="schoolSubtitle" style="color: #6b7280; font-size: 12px; margin: 0;">للتعليم الثانوي - الحلقة الثالثة</p>
+      </div>
+     </div>
+     <nav class="flex gap-8 items-center">
+      <a href="#" onclick="switchToPage('home'); return false;" class="smooth" id="navAbout" style="color: #374151; font-size: 14px; font-weight: 500; text-decoration: none;" onmouseover="this.style.color='#0d6b7f'" onmouseout="this.style.color='#374151'">عن المدرسة</a>
+      <a href="#excellence" class="smooth" id="navExcellence" style="color: #374151; font-size: 14px; font-weight: 500; text-decoration: none;" onmouseover="this.style.color='#0d6b7f'" onmouseout="this.style.color='#374151'">التميز</a>
+      <a href="#" onclick="switchToPage('events'); return false;" class="smooth" id="navStudents" style="color: #374151; font-size: 14px; font-weight: 500; text-decoration: none;" onmouseover="this.style.color='#0d6b7f'" onmouseout="this.style.color='#374151'">الفعاليات</a>
+      <a href="#policies" class="smooth" id="navPolicies" style="color: #374151; font-size: 14px; font-weight: 500; text-decoration: none;" onmouseover="this.style.color='#0d6b7f'" onmouseout="this.style.color='#374151'">سياسات المدرسة</a>
+
+      <a href="#contact" class="smooth" id="navContact" style="color: #374151; font-size: 14px; font-weight: 500; text-decoration: none;" onmouseover="this.style.color='#0d6b7f'" onmouseout="this.style.color='#374151'">التواصل</a>
+      <button id="langToggle" onclick="toggleLanguage()" class="smooth" style="background-color: #0d6b7f; color: #ffffff; padding: 8px 16px; border-radius: 6px; font-size: 12px; font-weight: 600; border: none; cursor: pointer;" onmouseover="this.style.backgroundColor='#0a5563'" onmouseout="this.style.backgroundColor='#0d6b7f'">EN</button>
+     </nav>
+    </div>
+   </header>
+
+   <div id="home-page" class="page-view active">
+    <section class="hero-section fade-up" style="padding: 120px 40px; text-align: center;">
+     <div style="max-width: 900px; margin: 0 auto;">
+      <h2 style="color: #ffffff; font-size: 48px; font-weight: 800; margin: 0 0 20px 0; line-height: 1.2; letter-spacing: -0.5px;">مدرسة شيخة بنت سعيد</h2>
+      <p id="heroTagline" class="fade-up fade-up-d1" style="color: rgba(255,255,255,0.95); font-size: 22px; font-weight: 500; margin: 0 0 40px 0; letter-spacing: 0.3px;">معاً نحقق – نصنع الأثر</p>
+
+      <div class="fade-up fade-up-d2" style="margin-top: 20px;">
+        <img src="11.PNG" alt="صورة المدرسة" class="hero-image">
+      </div>
+     </div>
+    </section>
+
+    <section id="about" style="background-color: #ffffff; padding: 80px 40px;">
+     <div style="max-width: 1000px; margin: 0 auto;">
+      <h2 id="aboutTitle" class="fade-up section-title" style="color: #1f2937; font-size: 32px; font-weight: 800; text-align: center; margin: 0 0 32px 0;">عن المدرسة</h2>
+      <p id="aboutText" class="fade-up fade-up-d1" style="color: #4b5563; font-size: 16px; text-align: center; max-width: 750px; margin: 0 auto 40px auto; line-height: 1.8;">
+        مدرستنا مدرسةٌ حكومية للبنات في الإمارات العربية المتحدة، تعمل ضمن منظومة التعليم الوطنية التي تقودها وزارة التربية والتعليم. مع العودة إلى إشراف الوزارة، تمتد مسؤولية المدرسة لتتجاوز التحسين الداخلي نحو ضمان التوافق الواضح مع السياسات الوطنية وأطر المناهج والأولويات التعليمية بعيدة المدى. يسترشد عملنا بالتزام راسخ بتقديم تجارب تعليمية عالية الجودة ومتسقة ومستدامة.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 fade-up fade-up-d2" style="margin-top: 48px;">
+       <div class="card-elevated card-hover smooth p-8 text-center" style="background-color: #f0f9fb;">
+        <div class="icon-box mx-auto mb-6" style="background-color: #cce5ff;">
+          <i data-lucide="eye" style="width:32px;height:32px;color:#0d6b7f;"></i>
+        </div>
+        <h3 id="visionTitle" style="color: #1f2937; font-size: 18px; font-weight: 700; margin: 0 0 12px 0;">الرؤية</h3>
+        <p id="visionText" style="color: #6b7280; font-size: 14px; line-height: 1.7; margin: 0;">مجتمعٌ تعليمي متميز تحقق فيه كل طالبة إمكاناتها الكاملة وتُسهم في مسيرة التقدم الوطني.</p>
+       </div>
+       <div class="card-elevated card-hover smooth p-8 text-center" style="background-color: #f0f9fb;">
+        <div class="icon-box mx-auto mb-6" style="background-color: #cce5ff;">
+          <i data-lucide="target" style="width:32px;height:32px;color:#0d6b7f;"></i>
+        </div>
+        <h3 id="missionTitle" style="color: #1f2937; font-size: 18px; font-weight: 700; margin: 0 0 12px 0;">الرسالة</h3>
+        <p id="missionText" style="color: #6b7280; font-size: 14px; line-height: 1.7; margin: 0;">تقديم تعليم وطني عالي الجودة ومتوافق ومستدام يُعدّ الطالبات للمسارات الأكاديمية والمهنية والمواطنة الفاعلة.</p>
+       </div>
+       <div class="card-elevated card-hover smooth p-8 text-center" style="background-color: #f0f9fb;">
+        <div class="icon-box mx-auto mb-6" style="background-color: #cce5ff;">
+          <i data-lucide="compass" style="width:32px;height:32px;color:#0d6b7f;"></i>
+        </div>
+        <h3 id="purposeTitle" style="color: #1f2937; font-size: 18px; font-weight: 700; margin: 0 0 12px 0;">الغاية</h3>
+        <p id="purposeText" style="color: #6b7280; font-size: 14px; line-height: 1.7; margin: 0;">تعزز مدرستنا حب التعلم مدى الحياة ضمن بيئة شاملة، حيث يتم دعم جميع الطلبة لتحقيق النجاح، وإحداث أثر إيجابي، والوصول إلى أقصى إمكاناتهم.</p>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <section id="excellence" style="background: linear-gradient(135deg, #f0f9fb 0%, #e8f4f8 100%); padding: 80px 40px;">
+     <div style="max-width: 1000px; margin: 0 auto;">
+      <h2 id="excellenceTitle" class="fade-up section-title" style="color: #1f2937; font-size: 32px; font-weight: 800; text-align: center; margin: 0 0 32px 0;">التميز والابتكار</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 fade-up fade-up-d1" style="margin-top: 40px;">
+       <div class="card-elevated smooth p-8" style="background-color: #ffffff;">
+        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+         <div class="icon-box shrink-0" style="background-color: #fef3c7;">
+          <i data-lucide="lightbulb" style="width:28px;height:28px;color:#d97706;"></i>
+         </div>
+         <div>
+          <h3 id="innovationTitle" style="color: #1f2937; font-size: 17px; font-weight: 700; margin: 0 0 8px 0;">الابتكار والإبداع</h3>
+          <p id="innovationText" style="color: #6b7280; font-size: 14px; line-height: 1.7; margin: 0;">نعزز ثقافة الابتكار من خلال البرامج التعليمية المتقدمة.</p>
+         </div>
+        </div>
+       </div>
+       <div class="card-elevated smooth p-8" style="background-color: #ffffff;">
+        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+         <div class="icon-box shrink-0" style="background-color: #dbeafe;">
+          <i data-lucide="leaf" style="width:28px;height:28px;color:#0369a1;"></i>
+         </div>
+         <div>
+          <h3 id="sustainabilityTitle" style="color: #1f2937; font-size: 17px; font-weight: 700; margin: 0 0 8px 0;">الاستدامة</h3>
+          <p id="sustainabilityText" style="color: #6b7280; font-size: 14px; line-height: 1.7; margin: 0;">الالتزام برؤية الإمارات 2030 والتنمية المستدامة.</p>
+         </div>
+        </div>
+       </div>
+       <div class="card-elevated smooth p-8" style="background-color: #ffffff;">
+        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+         <div class="icon-box shrink-0" style="background-color: #e0e7ff;">
+          <i data-lucide="zap" style="width:28px;height:28px;color:#4338ca;"></i>
+         </div>
+         <div>
+          <h3 id="improvementTitle" style="color: #1f2937; font-size: 17px; font-weight: 700; margin: 0 0 8px 0;">التحسين المستمر</h3>
+          <p id="improvementText" style="color: #6b7280; font-size: 14px; line-height: 1.7; margin: 0;">تطبيق معايير EFQM للتميز المؤسسي.</p>
+         </div>
+        </div>
+       </div>
+       <div class="card-elevated smooth p-8" style="background-color: #ffffff;">
+        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+         <div class="icon-box shrink-0" style="background-color: #f3e8ff;">
+          <i data-lucide="brain" style="width:28px;height:28px;color:#7e22ce;"></i>
+         </div>
+         <div>
+          <h3 id="aiTitle" style="color: #1f2937; font-size: 17px; font-weight: 700; margin: 0 0 8px 0;">الذكاء الاصطناعي</h3>
+          <p id="aiText" style="color: #6b7280; font-size: 14px; line-height: 1.7; margin: 0;">دمج التقنيات الحديثة والذكاء الاصطناعي في التعليم.</p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <section style="background-color: #ffffff; padding: 80px 40px;">
+     <div style="max-width: 1000px; margin: 0 auto;">
+      <h2 id="studentsTitle" class="fade-up section-title" style="color: #1f2937; font-size: 32px; font-weight: 800; text-align: center; margin: 0 0 32px 0;">إنجازات وفعاليات المدرسة</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-up fade-up-d1" style="margin-top: 40px;">
+       <div class="card-elevated card-hover smooth p-8" style="background-color: #fef2f2; cursor: pointer;" onclick="switchToPage('achievements')">
+        <div class="icon-box mb-6" style="background-color: #fecaca; width: 80px; height: 80px;">
+          <i data-lucide="trophy" style="width:40px;height:40px;color:#dc2626;"></i>
+        </div>
+        <h3 id="achievementsCardTitle" style="color: #1f2937; font-size: 17px; font-weight: 700; margin: 0 0 12px 0;">الإنجازات</h3>
+        <p id="achievementsCardText" style="color: #6b7280; font-size: 14px; line-height: 1.7; margin: 0 0 12px 0;">اكتشف إنجازات المدرسة والتكريمات التي حصلت عليها.</p>
+        <p style="color: #dc2626; font-weight: 600; font-size: 13px; margin: 0;">اضغط هنا →</p>
+       </div>
+       <div class="card-elevated card-hover smooth p-8" style="background-color: #f0fdf4; cursor: pointer;" onclick="switchToPage('events')">
+        <div class="icon-box mb-6" style="background-color: #bbf7d0; width: 80px; height: 80px;">
+          <i data-lucide="calendar" style="width:40px;height:40px;color:#15803d;"></i>
+        </div>
+        <h3 id="eventsCardTitle" style="color: #1f2937; font-size: 17px; font-weight: 700; margin: 0 0 12px 0;">الفعاليات</h3>
+        <p id="eventsCardText" style="color: #6b7280; font-size: 14px; line-height: 1.7; margin: 0 0 12px 0;">تابع فعاليات المدرسة والأحداث القادمة.</p>
+        <p style="color: #15803d; font-weight: 600; font-size: 13px; margin: 0;">اضغط هنا →</p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <!-- ===== School Policies Section ===== -->
+    <section id="policies" style="background: linear-gradient(135deg, #f0f9fb 0%, #e8f4f8 100%); padding: 80px 40px;">
+     <div style="max-width: 1000px; margin: 0 auto;">
+      <h2 id="policiesTitle" class="fade-up section-title" style="color: #1f2937; font-size: 32px; font-weight: 800; text-align: center; margin: 0 0 20px 0;">سياسات المدرسة</h2>
+      <p id="policiesText" class="fade-up fade-up-d1" style="color: #6b7280; font-size: 15px; text-align: center; max-width: 720px; margin: 0 auto 40px auto; line-height: 1.8;">يمكنكم الاطلاع على السياسات المدرسية المعتمدة من خلال فتح كل سياسة وتحميل ملفها.</p>
+      <div class="policies-accordion fade-up fade-up-d2">
+       <div class="policy-item card-elevated smooth">
+        <button type="button" class="policy-btn" onclick="togglePolicy(this)">
+         <span class="policy-title-wrap">
+          <span class="policy-mini-icon"><i data-lucide="file-text" style="width:22px;height:22px;"></i></span>
+          <span id="policy1">سياسة مجلس سند</span>
+         </span>
+         <span class="policy-plus">+</span>
+        </button>
+        <div class="policy-content">
+         <a href="sanad_policy.pdf" target="_blank" class="policy-download"><span class="policyDownloadText">📄 تحميل السياسة</span></a>
+        </div>
+       </div>
+       <div class="policy-item card-elevated smooth">
+        <button type="button" class="policy-btn" onclick="togglePolicy(this)">
+         <span class="policy-title-wrap">
+          <span class="policy-mini-icon"><i data-lucide="shield-alert" style="width:22px;height:22px;"></i></span>
+          <span id="policy2">سياسة إدارة المخاطر</span>
+         </span>
+         <span class="policy-plus">+</span>
+        </button>
+        <div class="policy-content">
+         <a href="سياسة_إدارة_المخاطر_مدرسة_شيخة_بنت_سعيد.pdf" target="_blank" class="policy-download"><span class="policyDownloadText">📄 تحميل السياسة</span></a>
+        </div>
+       </div>
+       <div class="policy-item card-elevated smooth">
+        <button type="button" class="policy-btn" onclick="togglePolicy(this)">
+         <span class="policy-title-wrap">
+          <span class="policy-mini-icon"><i data-lucide="lock" style="width:22px;height:22px;"></i></span>
+          <span id="policy3">سياسة الأمن السيبراني</span>
+         </span>
+         <span class="policy-plus">+</span>
+        </button>
+        <div class="policy-content">
+         <a href="سياسة_الأمن_السيبراني_مدرسة_شيخة_بنت_سعيد.pdf" target="_blank" class="policy-download"><span class="policyDownloadText">📄 تحميل السياسة</span></a>
+        </div>
+       </div>
+       <div class="policy-item card-elevated smooth">
+        <button type="button" class="policy-btn" onclick="togglePolicy(this)">
+         <span class="policy-title-wrap">
+          <span class="policy-mini-icon"><i data-lucide="users" style="width:22px;height:22px;"></i></span>
+          <span id="policy4">سياسة التربية الخاصة والدمج</span>
+         </span>
+         <span class="policy-plus">+</span>
+        </button>
+        <div class="policy-content">
+         <a href="سياسة_التربية_الخاصة_والدمج_مدرسة_شيخة_بنت_سعيد new.pdf" target="_blank" class="policy-download"><span class="policyDownloadText">📄 تحميل السياسة</span></a>
+        </div>
+       </div>
+       <div class="policy-item card-elevated smooth">
+        <button type="button" class="policy-btn" onclick="togglePolicy(this)">
+         <span class="policy-title-wrap">
+          <span class="policy-mini-icon"><i data-lucide="graduation-cap" style="width:22px;height:22px;"></i></span>
+          <span id="policy5">سياسة التطوير المهني</span>
+         </span>
+         <span class="policy-plus">+</span>
+        </button>
+        <div class="policy-content">
+         <a href="سياسة_التطوير_المهني_مدرسة_شيخة_بنت_سعيد.pdf" target="_blank" class="policy-download"><span class="policyDownloadText">📄 تحميل السياسة</span></a>
+        </div>
+       </div>
+       <div class="policy-item card-elevated smooth">
+        <button type="button" class="policy-btn" onclick="togglePolicy(this)">
+         <span class="policy-title-wrap">
+          <span class="policy-mini-icon"><i data-lucide="monitor" style="width:22px;height:22px;"></i></span>
+          <span id="policy6">سياسة التعلم عن بُعد</span>
+         </span>
+         <span class="policy-plus">+</span>
+        </button>
+        <div class="policy-content">
+         <a href="سياسة_التعلم_عن_بعد (1).pdf" target="_blank" class="policy-download"><span class="policyDownloadText">📄 تحميل السياسة</span></a>
+        </div>
+       </div>
+       <div class="policy-item card-elevated smooth">
+        <button type="button" class="policy-btn" onclick="togglePolicy(this)">
+         <span class="policy-title-wrap">
+          <span class="policy-mini-icon"><i data-lucide="message-circle" style="width:22px;height:22px;"></i></span>
+          <span id="policy7">سياسة التواصل المدرسي</span>
+         </span>
+         <span class="policy-plus">+</span>
+        </button>
+        <div class="policy-content">
+         <a href="سياسة_التواصل_المدرسي_شيخة_بنت_سعيد (1).pdf" target="_blank" class="policy-download"><span class="policyDownloadText">📄 تحميل السياسة</span></a>
+        </div>
+       </div>
+       <div class="policy-item card-elevated smooth">
+        <button type="button" class="policy-btn" onclick="togglePolicy(this)">
+         <span class="policy-title-wrap">
+          <span class="policy-mini-icon"><i data-lucide="briefcase" style="width:22px;height:22px;"></i></span>
+          <span id="policy8">سياسة السلوك المهني</span>
+         </span>
+         <span class="policy-plus">+</span>
+        </button>
+        <div class="policy-content">
+         <a href="سياسة_السلوك_المهني_الكادر_مدرسة_شيخة_بنت_سعيد.pdf" target="_blank" class="policy-download"><span class="policyDownloadText">📄 تحميل السياسة</span></a>
+        </div>
+       </div>
+       <div class="policy-item card-elevated smooth">
+        <button type="button" class="policy-btn" onclick="togglePolicy(this)">
+         <span class="policy-title-wrap">
+          <span class="policy-mini-icon"><i data-lucide="star" style="width:22px;height:22px;"></i></span>
+          <span id="policy9">سياسة الموهوبين والمتفوقين</span>
+         </span>
+         <span class="policy-plus">+</span>
+        </button>
+        <div class="policy-content">
+         <a href="سياسة_الموهوبين_والمتفوقين_مدرسة_شيخة_بنت_سعيد.pdf" target="_blank" class="policy-download"><span class="policyDownloadText">📄 تحميل السياسة</span></a>
+        </div>
+       </div>
+       <div class="policy-item card-elevated smooth">
+        <button type="button" class="policy-btn" onclick="togglePolicy(this)">
+         <span class="policy-title-wrap">
+          <span class="policy-mini-icon"><i data-lucide="hand-heart" style="width:22px;height:22px;"></i></span>
+          <span id="policy10">سياسة الوقاية من التنمر</span>
+         </span>
+         <span class="policy-plus">+</span>
+        </button>
+        <div class="policy-content">
+         <a href="سياسة_الوقاية_من_التنمر_مدرسة_شيخة_بنت_سعيد.pdf" target="_blank" class="policy-download"><span class="policyDownloadText">📄 تحميل السياسة</span></a>
+        </div>
+       </div>
+       <div class="policy-item card-elevated smooth">
+        <button type="button" class="policy-btn" onclick="togglePolicy(this)">
+         <span class="policy-title-wrap">
+          <span class="policy-mini-icon"><i data-lucide="shield-check" style="width:22px;height:22px;"></i></span>
+          <span id="policy11">سياسة حماية الطفل</span>
+         </span>
+         <span class="policy-plus">+</span>
+        </button>
+        <div class="policy-content">
+         <a href="سياسة_حماية_الطفل_مدرسة_شيخة_بنت_سعيد.pdf" target="_blank" class="policy-download"><span class="policyDownloadText">📄 تحميل السياسة</span></a>
+        </div>
+       </div>
+       <div class="policy-item card-elevated smooth">
+        <button type="button" class="policy-btn" onclick="togglePolicy(this)">
+         <span class="policy-title-wrap">
+          <span class="policy-mini-icon"><i data-lucide="landmark" style="width:22px;height:22px;"></i></span>
+          <span id="policy12">سياسة مجلس الطلبة</span>
+         </span>
+         <span class="policy-plus">+</span>
+        </button>
+        <div class="policy-content">
+         <a href="سياسة_مجلس_الطلبة_مدرسة_شيخة_بنت_سعيد.pdf" target="_blank" class="policy-download"><span class="policyDownloadText">📄 تحميل السياسة</span></a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <section id="contact" style="background: linear-gradient(135deg, #0d6b7f 0%, #14889d 50%, #e8f4f8 100%); padding: 80px 40px;">
+     <div style="max-width: 900px; margin: 0 auto;">
+      <h2 id="contactTitle" class="fade-up" style="color: #ffffff; font-size: 32px; font-weight: 800; text-align: center; margin: 0 0 16px 0;">تواصل معنا</h2>
+      <p id="contactDesc" class="fade-up fade-up-d1" style="color: rgba(255,255,255,0.85); text-align: center; font-size: 16px; margin: 0 0 48px 0;">نرحب بتواصلكم معنا.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 fade-up fade-up-d1" style="margin-bottom: 40px;">
+       <div class="card-elevated smooth text-center p-8" style="background-color: rgba(255,255,255,0.95);">
+        <div class="icon-box mx-auto mb-4" style="background-color: #e8f4f8; width: 64px; height: 64px;">
+          <i data-lucide="phone" style="width:32px;height:32px;color:#0d6b7f;"></i>
+        </div>
+        <p style="color: #6b7280; font-size: 13px; margin: 0 0 4px 0;">الهاتف</p>
+        <p style="color: #1f2937; font-weight: 700; font-size: 15px; margin: 0;">06 743 0018</p>
+       </div>
+       <div class="card-elevated smooth text-center p-8" style="background-color: rgba(255,255,255,0.95);">
+        <div class="icon-box mx-auto mb-4" style="background-color: #e8f4f8; width: 64px; height: 64px;">
+          <i data-lucide="mail" style="width:32px;height:32px;color:#0d6b7f;"></i>
+        </div>
+        <p style="color: #6b7280; font-size: 13px; margin: 0 0 4px 0;">البريد</p>
+        <p style="color: #1f2937; font-weight: 700; font-size: 15px; margin: 0;">info@school.ae</p>
+       </div>
+       <div class="card-elevated smooth text-center p-8" style="background-color: rgba(255,255,255,0.95);">
+        <div class="icon-box mx-auto mb-4" style="background-color: #e8f4f8; width: 64px; height: 64px;">
+          <i data-lucide="map-pin" style="width:32px;height:32px;color:#0d6b7f;"></i>
+        </div>
+        <p style="color: #6b7280; font-size: 13px; margin: 0 0 4px 0;">الموقع</p>
+        <p style="color: #1f2937; font-weight: 700; font-size: 15px; margin: 0;">شارع الشيخ راشد بن عبد العزيز - الجرف 2 - عجمان</p>
+       </div>
+      </div>
+
+      <form action="https://formspree.io/f/xpqkobwg" method="POST" class="fade-up fade-up-d2" style="max-width: 600px; margin: 0 auto; background-color: rgba(255,255,255,0.98); padding: 32px; border-radius: 12px;">
+       <div style="margin-bottom: 20px;">
+        <label for="name" style="color: #1f2937; font-size: 14px; font-weight: 600; display: block; margin-bottom: 8px;" id="nameLabel">الاسم</label>
+        <input id="name" name="name" type="text" required class="smooth w-full rounded-lg px-4 py-3" style="border: 2px solid #e5e7eb; font-size: 14px; outline: none;">
+       </div>
+       <div style="margin-bottom: 20px;">
+        <label for="email" style="color: #1f2937; font-size: 14px; font-weight: 600; display: block; margin-bottom: 8px;" id="emailLabel">البريد</label>
+        <input id="email" name="email" type="email" dir="ltr" required class="smooth w-full rounded-lg px-4 py-3" style="border: 2px solid #e5e7eb; font-size: 14px; outline: none;">
+       </div>
+       <div style="margin-bottom: 24px;">
+        <label for="message" style="color: #1f2937; font-size: 14px; font-weight: 600; display: block; margin-bottom: 8px;" id="messageLabel">الرسالة</label>
+        <textarea id="message" name="message" rows="5" required class="smooth w-full rounded-lg px-4 py-3" style="border: 2px solid #e5e7eb; font-size: 14px; outline: none; resize: vertical;"></textarea>
+       </div>
+       <input type="hidden" name="_subject" value="رسالة جديدة من موقع المدرسة">
+       <button type="submit" id="submitBtn" class="smooth w-full rounded-lg py-3" style="background-color: #0d6b7f; color: #ffffff; font-size: 15px; font-weight: 700; border: none; cursor: pointer;">إرسال</button>
+      </form>
+     </div>
+    </section>
+
+    <footer style="background-color: #1f2937; padding: 40px; text-align: center;">
+     <p id="footerText" style="color: rgba(255,255,255,0.65); font-size: 14px; margin: 0;">© 2025 مدرسة شيخة بنت سعيد — جميع الحقوق محفوظة</p>
+    </footer>
+   </div>
+  </div>
+
+  <div id="toast" style="position: fixed; bottom: -60px; left: 50%; transform: translateX(-50%); background: #0d6b7f; color: #fff; padding: 12px 28px; border-radius: 12px; font-size: 14px; font-weight: 600; transition: bottom 0.4s ease; z-index: 999;">
+   ✓ تم استقبال رسالتك!
+  </div>
+
+  <script>
+    let currentLang = 'ar';
+    const translations = {
+      ar: {
+        schoolName: 'مدرسة شيخة بنت سعيد',
+        schoolSubtitle: 'للتعليم الثانوي - الحلقة الثالثة',
+        langBtn: 'EN',
+        heroTagline: 'معاً نحقق – نصنع الأثر',
+        navAbout: 'عن المدرسة',
+        navExcellence: 'التميز',
+        navStudents: 'الفعاليات',
+        navPolicies: 'سياسات المدرسة',
+        navContact: 'التواصل',
+        aboutTitle: 'عن المدرسة',
+        aboutText: 'مدرستنا مدرسةٌ حكومية للبنات في الإمارات العربية المتحدة، تعمل ضمن منظومة التعليم الوطنية التي تقودها وزارة التربية والتعليم. مع العودة إلى إشراف الوزارة، تمتد مسؤولية المدرسة لتتجاوز التحسين الداخلي نحو ضمان التوافق الواضح مع السياسات الوطنية وأطر المناهج والأولويات التعليمية بعيدة المدى. يسترشد عملنا بالتزام راسخ بتقديم تجارب تعليمية عالية الجودة ومتسقة ومستدامة.',
+        visionTitle: 'الرؤية',
+        visionText: 'مجتمعٌ تعليمي متميز تحقق فيه كل طالبة إمكاناتها الكاملة وتُسهم في مسيرة التقدم الوطني.',
+        missionTitle: 'الرسالة',
+        missionText: 'تقديم تعليم وطني عالي الجودة ومتوافق ومستدام يُعدّ الطالبات للمسارات الأكاديمية والمهنية والمواطنة الفاعلة.',
+        purposeTitle: 'الغاية',
+        purposeText: 'تعزز مدرستنا حب التعلم مدى الحياة ضمن بيئة شاملة، حيث يتم دعم جميع الطلبة لتحقيق النجاح، وإحداث أثر إيجابي، والوصول إلى أقصى إمكاناتهم.',
+        excellenceTitle: 'التميز والابتكار',
+        innovationTitle: 'الابتكار والإبداع',
+        sustainabilityTitle: 'الاستدامة',
+        improvementTitle: 'التحسين المستمر',
+        aiTitle: 'الذكاء الاصطناعي',
+        studentsTitle: 'إنجازات وفعاليات المدرسة',
+        achievementsCardTitle: 'الإنجازات',
+        achievementsCardText: 'اكتشف إنجازات المدرسة والتكريمات التي حصلت عليها.',
+        eventsCardTitle: 'الفعاليات',
+        eventsCardText: 'تابع فعاليات المدرسة والأحداث القادمة.',
+        policiesTitle: 'سياسات المدرسة',
+        policiesText: 'يمكنكم الاطلاع على السياسات المدرسية المعتمدة من خلال فتح كل سياسة وتحميل ملفها.',
+        downloadPolicy: '📄 تحميل السياسة',
+        policy1: 'سياسة مجلس سند',
+        policy2: 'سياسة إدارة المخاطر',
+        policy3: 'سياسة الأمن السيبراني',
+        policy4: 'سياسة التربية الخاصة والدمج',
+        policy5: 'سياسة التطوير المهني',
+        policy6: 'سياسة التعلم عن بُعد',
+        policy7: 'سياسة التواصل المدرسي',
+        policy8: 'سياسة السلوك المهني',
+        policy9: 'سياسة الموهوبين والمتفوقين',
+        policy10: 'سياسة الوقاية من التنمر',
+        policy11: 'سياسة حماية الطفل',
+        policy12: 'سياسة مجلس الطلبة',
+        achievementsPageTitle: 'إنجازات المدرسة',
+        achievementTitle1: 'شهادة EFQM',
+        achievementDesc1: 'حصلت المدرسة على شهادة التميز الأوروبي EFQM للعام الماضي.',
+        achievementTitle2: 'نسبة النجاح 98%',
+        achievementDesc2: 'حققت طالباتنا نسبة نجاح عالية جداً في الامتحانات الوطنية.',
+        achievementTitle3: 'مشاركات دولية',
+        achievementDesc3: 'شاركت المدرسة في أكثر من 50 مسابقة وفعالية دولية.',
+        achievementTitle4: '15 برنامج متميز',
+        achievementDesc4: 'تقدم المدرسة 15 برنامج تعليمي متخصص ومتميز.',
+        eventsPageTitle: 'فعاليات المدرسة',
+        eventTitle1: 'يوم العلم الإماراتي',
+        eventDesc1: 'احتفالية وطنية تشارك فيها جميع الطالبات والكادر التعليمي.',
+        eventDate1: '📅 3 ديسمبر 2025',
+        eventTitle2: 'مسابقة العلوم والتكنولوجيا',
+        eventDesc2: 'مسابقة تنافسية بين الطالبات في مجالات STEM.',
+        eventDate2: '📅 15 ديسمبر 2025',
+        eventTitle3: 'المعرض السنوي للفنون',
+        eventDesc3: 'عرض لأعمال الطالبات الفنية والحرفية المتميزة.',
+        eventDate3: '📅 20 ديسمبر 2025',
+        eventTitle4: 'اليوم الرياضي',
+        eventDesc4: 'فعالية رياضية تشمل مسابقات متنوعة لجميع الطالبات.',
+        eventDate4: '📅 28 ديسمبر 2025',
+        contactTitle: 'تواصل معنا',
+        contactDesc: 'نرحب بتواصلكم معنا. يمكنكم التواصل عبر النموذج أدناه.',
+        nameLabel: 'الاسم الكامل',
+        emailLabel: 'البريد الإلكتروني',
+        messageLabel: 'الرسالة',
+        submitBtn: 'إرسال الرسالة',
+        toastMsg: '✓ تم استقبال رسالتك بنجاح!',
+        footerText: '© 2025 مدرسة شيخة بنت سعيد — جميع الحقوق محفوظة',
+        pageTitle: 'مدرسة شيخة بنت سعيد للتعليم الثانوي'
+      },
+      en: {
+        schoolName: 'Sheikha Bint Saeed',
+        schoolSubtitle: 'Secondary Education - Cycle 3',
+        langBtn: 'AR',
+        heroTagline: 'Together We Achieve – Make Your Mark',
+        navAbout: 'About',
+        navExcellence: 'Excellence',
+        navStudents: 'Events',
+        navPolicies: 'School Policies',
+        navContact: 'Contact',
+        aboutTitle: 'About the School',
+        aboutText: 'Our school is a government girls’ school in the United Arab Emirates, operating within the national education system led by the Ministry of Education. With the return to ministry supervision, the school’s responsibility extends beyond internal improvement to ensuring clear alignment with national policies, curriculum frameworks, and long-term educational priorities. Our work is guided by a strong commitment to delivering high-quality, consistent, and sustainable educational experiences.',
+        visionTitle: 'Vision',
+        visionText: 'A distinguished learning community where every student achieves her full potential and contributes to national progress.',
+        missionTitle: 'Mission',
+        missionText: 'Providing high-quality, aligned, and sustainable national education that prepares students for academic pathways, careers, and active citizenship.',
+        purposeTitle: 'Purpose',
+        purposeText: 'Our school fosters a lifelong love of learning within an inclusive environment where all students are supported to succeed, make a positive impact, and reach their full potential.',
+        excellenceTitle: 'Excellence & Innovation',
+        innovationTitle: 'Innovation & Creativity',
+        sustainabilityTitle: 'Sustainability',
+        improvementTitle: 'Continuous Improvement',
+        aiTitle: 'AI & Digital Learning',
+        studentsTitle: 'School Achievements & Events',
+        achievementsCardTitle: 'Achievements',
+        achievementsCardText: 'Discover the school\'s achievements and awards.',
+        eventsCardTitle: 'Events',
+        eventsCardText: 'Follow school events and upcoming occasions.',
+        policiesTitle: 'School Policies',
+        policiesText: 'You can view the approved school policies by opening each policy and downloading its file.',
+        downloadPolicy: '📄 Download Policy',
+        policy1: 'Sanad Council Policy',
+        policy2: 'Risk Management Policy',
+        policy3: 'Cybersecurity Policy',
+        policy4: 'Special Education & Inclusion Policy',
+        policy5: 'Professional Development Policy',
+        policy6: 'Distance Learning Policy',
+        policy7: 'School Communication Policy',
+        policy8: 'Professional Conduct Policy',
+        policy9: 'Gifted & Talented Policy',
+        policy10: 'Anti-Bullying Policy',
+        policy11: 'Child Protection Policy',
+        policy12: 'Student Council Policy',
+        achievementsPageTitle: 'School Achievements',
+        achievementTitle1: 'EFQM Certificate',
+        achievementDesc1: 'The school received the EFQM European Excellence certificate last year.',
+        achievementTitle2: '98% Success Rate',
+        achievementDesc2: 'Our students achieved a very high success rate in national exams.',
+        achievementTitle3: 'International Participations',
+        achievementDesc3: 'The school participated in over 50 international competitions and events.',
+        achievementTitle4: '15 Distinguished Programs',
+        achievementDesc4: 'The school offers 15 specialized and distinguished educational programs.',
+        eventsPageTitle: 'School Events',
+        eventTitle1: 'UAE National Day',
+        eventDesc1: 'National celebration with participation from all students and teaching staff.',
+        eventDate1: '📅 December 3, 2025',
+        eventTitle2: 'Science & Technology Competition',
+        eventDesc2: 'Competitive competition between students in STEM fields.',
+        eventDate2: '📅 December 15, 2025',
+        eventTitle3: 'Annual Arts Exhibition',
+        eventDesc3: 'Display of distinguished artistic and craft works by students.',
+        eventDate3: '📅 December 20, 2025',
+        eventTitle4: 'Sports Day',
+        eventDesc4: 'Sports event with various competitions for all students.',
+        eventDate4: '📅 December 28, 2025',
+        contactTitle: 'Contact Us',
+        contactDesc: 'We welcome your communication. You can reach us through the form below.',
+        nameLabel: 'Full Name',
+        emailLabel: 'Email Address',
+        messageLabel: 'Message',
+        submitBtn: 'Send Message',
+        toastMsg: '✓ Message received successfully!',
+        footerText: '© 2025 Sheikha Bint Saeed Secondary School — All rights reserved',
+        pageTitle: 'Sheikha Bint Saeed Secondary School'
+      }
+    };
+
+    function switchToPage(page) {
+      const pages = ['home-page', 'achievements-page', 'events-page'];
+      pages.forEach(p => {
+        const elem = document.getElementById(p);
+        if (elem) elem.classList.remove('active');
+      });
+      const targetPage = document.getElementById(page + '-page') || document.getElementById(page);
+      if (targetPage) targetPage.classList.add('active');
+      window.scrollTo(0, 0);
+    }
+
+
+    function togglePolicy(button) {
+      const content = button.nextElementSibling;
+      const plus = button.querySelector('.policy-plus');
+      const isOpen = content.classList.contains('open');
+
+      document.querySelectorAll('.policy-content').forEach(item => item.classList.remove('open'));
+      document.querySelectorAll('.policy-plus').forEach(item => item.textContent = '+');
+
+      if (!isOpen) {
+        content.classList.add('open');
+        if (plus) plus.textContent = '−';
+      }
+    }
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'ar' ? 'en' : 'ar';
+      applyLanguage();
+      localStorage.setItem('schoolLang', currentLang);
+    }
+
+    function applyLanguage() {
+      const t = translations[currentLang];
+      const html = document.getElementById('htmlRoot');
+      const isAr = currentLang === 'ar';
+
+      html.lang = currentLang;
+      html.dir = isAr ? 'rtl' : 'ltr';
+
+      document.getElementById('pageTitle').textContent = t.pageTitle;
+      document.getElementById('schoolName').textContent = t.schoolName;
+      document.getElementById('schoolSubtitle').textContent = t.schoolSubtitle;
+      document.getElementById('langToggle').textContent = t.langBtn;
+      document.getElementById('heroTagline').textContent = t.heroTagline;
+      document.getElementById('navAbout').textContent = t.navAbout;
+      document.getElementById('navExcellence').textContent = t.navExcellence;
+      document.getElementById('navStudents').textContent = t.navStudents;
+      document.getElementById('navPolicies').textContent = t.navPolicies;
+      document.getElementById('navContact').textContent = t.navContact;
+      document.getElementById('aboutTitle').textContent = t.aboutTitle;
+      document.getElementById('aboutText').textContent = t.aboutText;
+      document.getElementById('visionTitle').textContent = t.visionTitle;
+      document.getElementById('visionText').textContent = t.visionText;
+      document.getElementById('missionTitle').textContent = t.missionTitle;
+      document.getElementById('missionText').textContent = t.missionText;
+      document.getElementById('purposeTitle').textContent = t.purposeTitle;
+      document.getElementById('purposeText').textContent = t.purposeText;
+      document.getElementById('excellenceTitle').textContent = t.excellenceTitle;
+      document.getElementById('innovationTitle').textContent = t.innovationTitle;
+      document.getElementById('sustainabilityTitle').textContent = t.sustainabilityTitle;
+      document.getElementById('improvementTitle').textContent = t.improvementTitle;
+      document.getElementById('aiTitle').textContent = t.aiTitle;
+      document.getElementById('studentsTitle').textContent = t.studentsTitle;
+      document.getElementById('achievementsCardTitle').textContent = t.achievementsCardTitle;
+      document.getElementById('achievementsCardText').textContent = t.achievementsCardText;
+      document.getElementById('eventsCardTitle').textContent = t.eventsCardTitle;
+      document.getElementById('eventsCardText').textContent = t.eventsCardText;
+      document.getElementById('policiesTitle').textContent = t.policiesTitle;
+      document.getElementById('policiesText').textContent = t.policiesText;
+      document.querySelectorAll('.policyDownloadText').forEach(el => el.textContent = t.downloadPolicy);
+      document.getElementById('policy1').textContent = t.policy1;
+      document.getElementById('policy2').textContent = t.policy2;
+      document.getElementById('policy3').textContent = t.policy3;
+      document.getElementById('policy4').textContent = t.policy4;
+      document.getElementById('policy5').textContent = t.policy5;
+      document.getElementById('policy6').textContent = t.policy6;
+      document.getElementById('policy7').textContent = t.policy7;
+      document.getElementById('policy8').textContent = t.policy8;
+      document.getElementById('policy9').textContent = t.policy9;
+      document.getElementById('policy10').textContent = t.policy10;
+      document.getElementById('policy11').textContent = t.policy11;
+      document.getElementById('policy12').textContent = t.policy12;
+      document.getElementById('contactTitle').textContent = t.contactTitle;
+      document.getElementById('contactDesc').textContent = t.contactDesc;
+      document.getElementById('nameLabel').textContent = t.nameLabel;
+      document.getElementById('emailLabel').textContent = t.emailLabel;
+      document.getElementById('messageLabel').textContent = t.messageLabel;
+      document.getElementById('submitBtn').textContent = t.submitBtn;
+      document.getElementById('footerText').textContent = t.footerText;
+      document.getElementById('toast').textContent = t.toastMsg;
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('schoolLang') || 'ar';
+      currentLang = savedLang;
+      applyLanguage();
+      lucide.createIcons();
+      switchToPage('home');
+    });
+  </script>
+ </body>
+</html>
